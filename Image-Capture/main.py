@@ -22,7 +22,7 @@ def validateDir(name):
         i = 1
         temp = name
         while i < 200 and os.path.exists(name):
-            name = temp + "_" + i;
+            name = temp + "_" + str(i);
             i += 1
         if i == 200:
             raise Exception("Name value exceeding limit")
