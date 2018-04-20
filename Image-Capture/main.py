@@ -54,7 +54,6 @@ if __name__ == "__main__":
             camera.capture(file_name, resize = (480, 480))
             print("Captured Image: " + str(i) + ".jpg")
             lightOff()
-            os.system("xdg-open " + file_name)
             i += 1
     lightOff()
     print("Terminating Program")
